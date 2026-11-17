@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 9</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+   section {
+      background: #ac9393;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+   .flex-container {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+     background-color: blue;
+   }
+   .flex-container1 {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    justify-content: space-between;
+     background-color: blue;
+      height: 50vh;
+   }
+   .flex-container > div{
+        background-color: antiquewhite;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+    } 
+    .flex-container1 > div{
+        background-color: antiquewhite;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+    }
+  
+    .navbar {
+  background-color: #333333;
+  width: auto;
+  padding: 54px 0;
+}
+.nav-links {
+  display: flex;                 
+  justify-content: space-evenly;  
+  align-items: center;  
+  list-style: none;              
+}
+ .sidebar {
+  width: 220px;                    
+  height: 100vh;                
+  background-color: #2c3e50;
+}
+.nav-links1 {
+  display: flex; 
+  flex-direction: column;                
+  justify-content: space-evenly;  
+  height: 100%;
+  align-items:center;  
+  list-style: none;              
+}
+   h1{
+    color: black;
+   }
+
+   .card-container {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  flex: 1; 
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #614848;
+}
+
+.box-container {
+  display: flex;
+  align-items: flex-end; 
+  gap: 20px;             
+  height: 250px;        
+  border: 2px dashed #ccc;
+  padding: 10px;
+}
+
+.box {
+  flex: 1;
+  background-color: #4a90e2;
+  color: white;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.box-1 { height: 80px; }
+.box-2 { height: 140px; }
+.box-3 { height: 200px; }
+
+.box-container1 {
+  display: flex;
+  align-items: flex-end; 
+  gap: 20px;             
+  height: 250px;        
+  border: 2px dashed #ccc;
+  padding: 10px;
+}
+.box1 > div {
+  flex: 1;
+  background-color: #4a90e2;
+  color: white;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+  </style>
+</head>
+<body>
+      <h1>1.The most used in flex-container is Row</h1>
+  <section>
+   <div class="flex-container">
+
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    </div>
+   </section>
+
+      <h1>2.The most used in flex-container is Column</h1>
+
+   <section>
+    <div class="flex-container1">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+   </section> 
+
+     <h1>3.The Navigation Bar is Row</h1>
+
+     <nav class="navbar">
+     <ul class="nav-links ">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    </nav>
+    <h1>4.The Navigation Bar is column</h1>
+
+     <nav class="sidebar">
+     <ul class="nav-links1 ">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    </nav>
+
+    <h1>5.The layout of cardbox</h1>
+
+  <div class="card-container">
+  <div class="card">
+    <h3>Card 1</h3>
+    <p>Short description for the first card.</p>
+  </div>
+  <div class="card">
+    <h3>Card 2</h3>
+    <p>Medium description with a bit more content inside.</p>
+  </div>
+  <div class="card">
+    <h3>Card 3</h3>
+    <p>Short description for the third card.</p>
+  </div>
+</div>
+<h1>6.The is box-container</h1>
+<div class="box-container">
+  <div class="box box-1">Box 1 (Short)</div>
+  <div class="box box-2">Box 2 (Medium)</div>
+  <div class="box box-3">Box 3 (Tall)</div>
+</div>
+
+<h1>7.The responsive-container</h1>
+<div class="responsive-container">
+  <div class="box">Box 1</div>
+  <div class="box">Box 2</div>
+  <div class="box">Box 3</div>
+</div>
+
+<h1>8.Image Gallery</h1>
+<section>
+<div class="gallery">
+  <div class="gallery-item">
+    <img src="pexels-76905988-8698110.jpg" alt="BMW">BMW
+  </div>
+  <div class="gallery-item">
+    <img src="pexels-abhinav-8532497.jpg" alt="R15 v4"> R15v4
+  </div>
+  <div class="gallery-item">
+    <img src="pexels-deepak-kp-432261610-31544636.jpg" alt="RE 350">RE350
+  </div>
+  <div class="gallery-item">
+    <img src="pexels-jisso-heby-597210750-17394010 (1).jpg" alt="MT150">MT150
+  </div>
+  <div class="gallery-item">
+    <img src="pexels-jisso-heby-597210750-17394010.jpg" alt="MT">MT
+  </div>
+  <div class="gallery-item">
+    <img src="pexels-momentsbypeterpatel-5275284.jpg" alt="DUKE">DUKE KTM 390
+  </div>
+</div>
+</section>
+
+</body>
+</html>
